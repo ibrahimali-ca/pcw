@@ -11,17 +11,20 @@ const Header = () => {
           <h1 className="text-xl font-bold">SoundWeave</h1>
         </div>
 
-        {/* Navigation Links */}
-        <nav className="flex-grow">
-          <ul className="flex justify-center space-x-4">
+        {/* Navigation Links for larger screens */}
+        <nav className="hidden md:flex">
+          <ul className="flex space-x-4">
             <li><a href="#home" className="hover:text-gray-300">Products</a></li>
             <li><a href="#resources" className="hover:text-gray-300">Resources</a></li>
             <li><a href="#about" className="hover:text-gray-300">About Us</a></li>
           </ul>
         </nav>
 
+        {/* Menu Link for smaller screens */}
+        <a href="#menu" className="md:hidden hover:text-gray-300">Menu</a> 
+
         {/* Search and Additional Link */}
-        <div className="flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-4">
           <input type="text" placeholder="Search..." className="px-2 py-1 rounded text-gray-800" />
           <a href="#contact" className="hover:text-gray-300">Contact Us</a>
         </div>
