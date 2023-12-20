@@ -1,13 +1,16 @@
+// app/page.tsx
 import React from 'react';
 import Header from '../components/Header';
+import HeroSection from '../components/HeroSection';
 
-const Home = () => {
+const Page = () => {
   return (
     <div>
       <Header />
+      <HeroSection />
       {/* Rest of the homepage content */}
     </div>
   );
 };
 
-export default Home;
+export default Page;

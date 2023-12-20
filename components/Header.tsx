@@ -3,8 +3,8 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="absolute top-0 left-0 w-full text-white">
+      <div className="container mx-auto flex justify-between items-center pt-6 p-4">
 
         {/* Logo */}
         <div className="logo">
