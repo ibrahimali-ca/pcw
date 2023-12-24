@@ -2,6 +2,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
+import SolutionsSection from '../components/SolutionsSection';
+import DiscoverSolutionsSection from '../components/DiscoverSolutionsSection';
 
 const Page = () => {
   return (
@@ -9,6 +11,8 @@ const Page = () => {
       <Header />
       <HeroSection />
       {/* Rest of the homepage content */}
+      <SolutionsSection />
+      <DiscoverSolutionsSection />
     </div>
   );
 };
