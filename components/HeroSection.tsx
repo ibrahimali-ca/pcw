@@ -1,5 +1,7 @@
 // components/HeroSection.tsx
 import React from 'react';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HeroSection = () => {
   return (
@@ -13,21 +15,21 @@ const HeroSection = () => {
         <div className="absolute bottom-0 w-full flex justify-center py-8">
             <div className="text-center">
                 <h3 className="text-white text-xl mb-4">Unveiling seven new distinctive colors</h3>
-                <button className="bg-black text-white font-semibold py-2 px-4 border border-black rounded">
-                    see the color revolution
+                <button className="bg-black text-white font-semibold py-2 px-4 border border-black rounded-full">
+    see the color revolution
                 </button>
             </div>
         </div>
         
         {/* Navigation buttons */}
         <div className="absolute bottom-0 pb-12 right-5 flex">
-            <button className="text-white bg-black bg-opacity-50 px-4 py-2 rounded-full mr-2">
-                Back
-            </button>
-            <button className="text-white bg-black bg-opacity-50 px-4 py-2 rounded-full">
-                Next
-            </button>
-        </div>
+  <button className="text-white bg-black bg-opacity-50 w-16 h-16 flex items-center justify-center rounded-full mr-2">
+    <FontAwesomeIcon icon={faArrowLeft} size="sm" /> 
+  </button>
+  <button className="text-white bg-black bg-opacity-50 w-16 h-16 flex items-center justify-center rounded-full">
+    <FontAwesomeIcon icon={faArrowRight} />
+  </button>
+</div>  
     </div>
   );
 };

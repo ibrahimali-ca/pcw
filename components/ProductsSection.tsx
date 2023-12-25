@@ -11,9 +11,8 @@ const ProductsSection = () => {
       {/* This div takes up 40% of the viewport height and centers its content */}
       <div className="h-[40vh] flex justify-center items-center">
         {/* This is the main heading of the section */}
-        <h1 className="text-[32px] pl-[5%]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <h1 className="text-[32px] pl-2%">
+        Enhancing environments for life, work, and play.
         </h1>
       </div>
       {/* This div is a grid with 4 columns and a gap of 4 */}

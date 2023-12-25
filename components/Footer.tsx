@@ -41,7 +41,7 @@ const Footer = () => {
                 <h3 className="font-bold mb-4">Phone</h3>
                 <p>(555) 555 5555</p>
             </div>
-            <button className="border border-white rounded-full py-2 px-6 hover:bg-white hover:text-black transition-colors">Contact us</button>
+            <button className="border border-white rounded-full py-2 px-3 hover:bg-white hover:text-black transition-colors">Contact us</button>
         </div>
     </div>
     );
