@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import SolutionsSection from "../components/SolutionsSection";
+import ProductsSection from "../components/ProductsSection";
 
 const Page = () => {
   return (
@@ -10,6 +11,8 @@ const Page = () => {
       <Header />
       <HeroSection />
       <SolutionsSection />
+      <ProductsSection />
+
       {/* Rest of the homepage content */}
     </div>
   );
