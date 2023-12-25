@@ -1,18 +1,19 @@
 // app/page.tsx
-import React from 'react';
-import Header from '../components/Header';
-import HeroSection from '../components/HeroSection';
-import SolutionsSection from '../components/SolutionsSection';
-import DiscoverSolutionsSection from '../components/DiscoverSolutionsSection';
+import React from "react";
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
+import SolutionsSection from "../components/SolutionsSection";
+import ProductsSection from "../components/ProductsSection";
 
 const Page = () => {
   return (
     <div>
       <Header />
       <HeroSection />
-      {/* Rest of the homepage content */}
       <SolutionsSection />
-      <DiscoverSolutionsSection />
+      <ProductsSection />
+
+      {/* Rest of the homepage content */}
     </div>
   );
 };
