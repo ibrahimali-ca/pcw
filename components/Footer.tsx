@@ -1,5 +1,7 @@
 // /components/Footer.tsk
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faTwitter, faFacebookF, faLinkedinIn, faPinterestP } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
     
@@ -7,13 +9,13 @@ const Footer = () => {
         <div className="container mx-auto px-6 py-12 flex justify-between items-start">
         <div className="flex flex-col space-y-8">
             <div>
-                <img src="https://placehold.co/100x50" alt="Autex Acoustics logo" className="mb-4" />
+                <img src="https://placehold.co/100x50" alt="SoundWeave logo" className="mb-4" />
                 <div className="flex space-x-3">
-                    <i className="fab fa-instagram"></i>
-                    <i className="fab fa-twitter"></i>
-                    <i className="fab fa-facebook-f"></i>
-                    <i className="fab fa-linkedin-in"></i>
-                    <i className="fab fa-pinterest-p"></i>
+                <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faFacebookF} />
+                    <FontAwesomeIcon icon={faLinkedinIn} />
+                    <FontAwesomeIcon icon={faPinterestP} />
                 </div>
             </div>
         </div>
@@ -33,11 +35,11 @@ const Footer = () => {
         <div className="flex flex-col space-y-8">
             <div>
                 <h3 className="font-bold mb-4">Email</h3>
-                <p>sales@autexacoustics.com</p>
+                <p>ibrahim@ibrahimali.ca</p>
             </div>
             <div>
                 <h3 className="font-bold mb-4">Phone</h3>
-                <p>(424) 203 1813</p>
+                <p>(555) 555 5555</p>
             </div>
             <button className="border border-white rounded-full py-2 px-6 hover:bg-white hover:text-black transition-colors">Contact us</button>
         </div>
