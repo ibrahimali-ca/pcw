@@ -2,6 +2,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faTwitter, faFacebookF, faLinkedinIn, faPinterestP } from '@fortawesome/free-brands-svg-icons'
+import Image from 'next/image'
 
 const Footer = () => {
     
@@ -9,7 +10,12 @@ const Footer = () => {
         <div className="container mx-auto px-6 py-12 flex justify-between items-start">
         <div className="flex flex-col space-y-8">
             <div>
-                <img src="https://placehold.co/100x50" alt="SoundWeave logo" className="mb-4" />
+                <Image 
+                src="https://source.unsplash.com/100x50" 
+                alt="SoundWeave logo"
+                width={100}
+                height={50} 
+                className="mb-4" />
                 <div className="flex space-x-3">
                 <FontAwesomeIcon icon={faInstagram} />
                     <FontAwesomeIcon icon={faTwitter} />

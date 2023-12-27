@@ -1,75 +1,51 @@
+import Image from 'next/image'
+
 const ProductsSection = () => {
   return (
-    // The section takes up the full viewport height and has a beige background
-    <section
-      style={{
-        height: "100vh",
-        backgroundColor: "beige",
-        position: "relative",
-      }}
-    >
-      {/* This div takes up 40% of the viewport height and centers its content */}
-      <div className="h-[40vh] flex justify-center items-center">
-        {/* This is the main heading of the section */}
-        <h1 className="text-[32px] pl-2%">
+    <section className="ProductSectionWrapper my-16">
+      <h1 className="ProductsSectionTitle text-5xl lg:text-6xl font-bold  sm:px-16 md:px-24 lg:px-36">
         Enhancing environments for life, work, and play.
-        </h1>
-      </div>
-      {/* This div is a grid with 4 columns and a gap of 4 */}
-      <div className="grid grid-cols-4 gap-4">
-        {/* This div spans 1 column and contains a paragraph of text */}
-        <div className="text-[16px] pl-[20%] col-span-1">
-          <p> * Lorem ipsum </p>
+      </h1>
+      <div className="flex flex-col sm:flex-row justify-center items-center">
+        <div className="text-[16px] px-[20%] sm:px-0 sm:w-1/3">
+          <p>Lorem ipsum</p>
         </div>
-        {/* This div spans 3 columns and contains a grid with 3 columns and a gap of 4 */}
-        <div className="col-span-3 grid grid-cols-3 gap-4">
-          {/* Each of these divs takes up 80% of the height of their parent, has a gray background, and contains an image and a link */}
-          <div
-            style={{
-              height: "80%",
-              padding: "10% 0",
-              width: "100%",
-              backgroundColor: "gray",
-            }}
-          >
-            <img
-              src="placeholder1.png"
+        {/* This div will stack the images on top of each other on mobile, and will be next to each other on screens sm or larger */}
+        <div className="flex flex-col sm:flex-row w-full justify-center gap-4">
+          <div className="flex flex-col items-center">
+            <Image
+              src="https://source.unsplash.com/random/300x300"
               alt="Solution 1"
-              style={{ width: "100%" }}
+              height={300}
+              width={300}
+              layout="fixed"
             />
             <a href="/product1">Ceilings</a>
           </div>
-          <div
-            style={{
-              height: "80%",
-              padding: "10% 0",
-              width: "100%",
-              backgroundColor: "gray",
-            }}
-          >
-            <img
-              src="placeholder2.png"
+          <div className="flex flex-col items-center">
+            <Image
+              src="https://source.unsplash.com/random/300x300"
               alt="Solution 2"
-              style={{ width: "100%" }}
+              width={300}
+              height={300}
+              layout="fixed" // Added layout="fixed" to maintain consistency
             />
             <a href="/product2">Walls</a>
           </div>
-          <div
-            style={{
-              height: "80%",
-              padding: "10% 0",
-              width: "100%",
-              backgroundColor: "gray",
-            }}
-          >
-            <img
-              src="placeholder3.png"
+          <div className="flex flex-col items-center">
+            <Image
+              src="https://source.unsplash.com/random/300x300"
               alt="Solution 3"
-              style={{ width: "100%" }}
+              width={300}
+              height={300}
+              layout="fixed" // Added layout="fixed" to maintain consistency
             />
             <a href="/product3">Screens</a>
           </div>
         </div>
+        <button className="ProductSectionButton sm:hidden bg-black text-white font-semibold py-2 px-4 border border-black rounded-full">
+        see all our products
+      </button>
       </div>
     </section>
   );
