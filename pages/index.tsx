@@ -3,7 +3,6 @@ import React from "react";
 import Link from 'next/link';
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
-import SolutionsSection from "../components/SolutionsSection";
 import ProductsSection from "../components/ProductsSection";
 import Footer from "../components/Footer";
 
@@ -13,7 +12,6 @@ const Page = () => {
       <Header />
       <HeroSection />
       <ProductsSection />
-      <SolutionsSection />
       <Footer />
 
       {/* Rest of the homepage content */}
