@@ -27,14 +27,10 @@ const Footer = () => {
         </div>
         <div className="flex flex-col space-y-8">
             <nav className="flex flex-col space-y-4">
-                <a href="#" className="hover:text-gray-300">Projects</a>
-                <a href="#" className="hover:text-gray-300">Our story</a>
-                <a href="#" className="hover:text-gray-300">Our sustainability journey</a>
-                <a href="#" className="hover:text-gray-300">Acoustic solutions</a>
-                <a href="#" className="hover:text-gray-300">Find a rep</a>
+                <a href="#" className="hover:text-gray-300">Products</a>
+                <a href="#" className="hover:text-gray-300">Resources</a>
+                <a href="#" className="hover:text-gray-300">Colors</a>
                 <a href="#" className="hover:text-gray-300">News</a>
-                <a href="#" className="hover:text-gray-300">Bespoke</a>
-                <a href="#" className="hover:text-gray-300">Technical documents</a>
                 <a href="#" className="hover:text-gray-300">Contact</a>
             </nav>
         </div>
@@ -47,7 +43,7 @@ const Footer = () => {
                 <h3 className="font-bold mb-4">Phone</h3>
                 <p>(555) 555 5555</p>
             </div>
-            <button className="border border-white rounded-full py-2 px-3 hover:bg-white hover:text-black transition-colors">Contact us</button>
+            <button className="bg-black text-white font-semibold py-2 px-4 border border-black rounded-full">Contact us</button>
         </div>
     </div>
     );
